@@ -13,5 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{test}', 'PageController@index');
+// Route::get('/', 'PageController@index');
+// Route::get('/testeur', 'PageController@index')->name('testeur');
+
+// Route::view('/', 'welcome');
+// Route::redirect('/test', '/');
+
+Route::middleware(['first'])->group(function (){
+    Route::get('/', function () {
+        
+    });
+
+});
+
+// Route::get('/{name}', function ($name = null) {
+//     return $name;
+// });
+
+// Route::get('/{name?}', function ($name = 'Alex') {
+//     return $name;
+// });
+
+// Route::get('/{name}', function ($name) {
+//     return $name;
+// })->where('name', '[a-z]+');
 
