@@ -16,15 +16,16 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', 'PageController@index');
 // Route::get('/testeur', 'PageController@index')->name('testeur');
 
-// Route::view('/', 'welcome');
+Route::view('/', 'welcome');
 // Route::redirect('/test', '/');
 
-Route::middleware(['first'])->group(function (){
-    Route::get('/', function () {
+Route::view('/alpha', 'home');
+// Route::middleware(['first'])->group(function (){
+//     Route::get('/', function () {
         
-    });
+//     });
 
-});
+// });
 
 // Route::get('/{name}', function ($name = null) {
 //     return $name;

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller
 {
@@ -11,6 +12,7 @@ class PageController extends Controller
     {   
         // return view('welcome', ['test'=>$test]);
         // dd(url('hello'));
+        // Storage::exists('/test.jpg');
         return view('welcome');
 
 
